@@ -1,12 +1,15 @@
 ---
-name: Run CI on push
+name: "auto:push:golang-tests"
 on:
   push:
+    paths-ignore:
+      - '*.md'
     tags:
       - v*
     branches:
       - main
   pull_request:
+
 jobs:
   golangci-lint:
     strategy:
@@ -20,6 +23,7 @@ jobs:
       - uses: actions/setup-go@v4
         with:
           go-version: ${{ matrix.go }}
+          cache: false
       - name: lint
         uses: golangci/golangci-lint-action@v3
         with:
@@ -34,8 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install Go
-        uses: actions/setup-go@v4
+      - uses: actions/setup-go@v4
         with:
           go-version: ${{ matrix.go }}
       - name: Run tests

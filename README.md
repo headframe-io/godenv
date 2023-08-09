@@ -2,7 +2,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/headframe-io/godenv)](https://goreportcard.com/report/github.com/headframe-io/godenv)
 [![codecov](https://codecov.io/gh/headframe-io/godenv/branch/main/graph/badge.svg?token=7A6DTWE9BK)](https://codecov.io/gh/headframe-io/godenv)
 [![GitHub license](https://img.shields.io/github/license/headframe-io/godenv)](https://github.com/headframe-io/godenv/blob/main/LICENSE)
-[![CI](https://github.com/headframe-io/godenv/actions/workflows/push.yml/badge.svg)](https://github.com/headframe-io/godenv/actions/workflows/push.yml)
+[![CI](https://github.com/headframe-io/godenv/actions/workflows/auto.push.golang-tests.yml/badge.svg)](https://github.com/headframe-io/godenv/actions/workflows/auto.push.golang-tests.yml)
 
 # godenv — a proper package to read `.env` files
 
