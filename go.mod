@@ -1,4 +1,4 @@
-module github.com/youla-dev/godenv
+module github.com/headframe-io/godenv
 
 go 1.13
 

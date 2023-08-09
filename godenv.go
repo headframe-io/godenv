@@ -3,16 +3,15 @@ package godenv
 import (
 	"fmt"
 	"io"
-	"io/ioutil"
 
-	"github.com/youla-dev/godenv/internal/ast"
-	"github.com/youla-dev/godenv/internal/parser"
-	"github.com/youla-dev/godenv/internal/scanner"
+	"github.com/headframe-io/godenv/internal/ast"
+	"github.com/headframe-io/godenv/internal/parser"
+	"github.com/headframe-io/godenv/internal/scanner"
 )
 
 // Parse reads an env file from io.Reader, returning a map of keys and values.
 func Parse(r io.Reader) (map[string]string, error) {
-	input, err := ioutil.ReadAll(r)
+	input, err := io.ReadAll(r)
 	if err != nil {
 		return nil, err
 	}

@@ -6,7 +6,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/youla-dev/godenv/internal/token"
+	"github.com/headframe-io/godenv/internal/token"
 )
 
 // nolint:gochecknoglobals // TODO (titusjaka): rewrite this code in future.
