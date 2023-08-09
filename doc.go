@@ -23,14 +23,14 @@
 
 // Package godenv is a tiny module that parses .env files.
 //
-// Motivation
+// # Motivation
 //
 // We took inspiration from the godotenv (https://github.com/joho/godotenv)
 // repository. The goal we pursued was to write a parser without using regular
 // expressions but with a lexer/parser approach.
 //
 // The current specification of .env files format is listed in SPECIFICATION.md
-// (https://github.com/youla-dev/godenv/blob/main/SPECIFICATION.md).
+// (https://github.com/headframe-io/godenv/blob/main/SPECIFICATION.md).
 //
 // If you are curious about learning more about the approach, see the following links:
 //
@@ -38,25 +38,24 @@
 //   - https://en.wikipedia.org/wiki/Lexical_analysis
 //   - https://en.wikipedia.org/wiki/Parsing#Parser
 //
-// Usage
+// # Usage
 //
 // Let's assume, you have a .env file with the following content:
 //
-// 	HTTP_LISTEN=":8080"
-// 	LOG_LEVEL="info"
+//	HTTP_LISTEN=":8080"
+//	LOG_LEVEL="info"
 //
 // You can easily open the file and parse its content into map[string]string:
 //
-// 	f, err := os.Open(".env")
-// 	if err != nil {
-// 		panic(err)
-// 	}
-// 	defer f.Close()
+//	f, err := os.Open(".env")
+//	if err != nil {
+//		panic(err)
+//	}
+//	defer f.Close()
 //
-// 	vars, err := godenv.Parse(f)
-// 	if err != nil {
-// 		panic(err)
-// 	}
-// 	fmt.Println(vars)
-//
+//	vars, err := godenv.Parse(f)
+//	if err != nil {
+//		panic(err)
+//	}
+//	fmt.Println(vars)
 package godenv

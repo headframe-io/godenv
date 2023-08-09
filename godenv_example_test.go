@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/youla-dev/godenv"
+	"github.com/headframe-io/godenv"
 )
 
 func ExampleParse() {

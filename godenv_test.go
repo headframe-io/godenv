@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/youla-dev/godenv"
+	"github.com/headframe-io/godenv"
 )
 
 func TestParse(t *testing.T) {
